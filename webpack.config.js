@@ -31,7 +31,11 @@ export default {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: "asset/resource",
         },
-
+        {
+        test: /\.js$/,
+        use: "babel-loader",
+        exclude: /node_modules/,
+        },
     ],
   },
 };
