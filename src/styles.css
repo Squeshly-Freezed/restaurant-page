@@ -33,7 +33,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    text-shadow: 0px 0px 3px white;
+    text-shadow: 0px 0px 1px white;
 }
 
 .header {
@@ -54,6 +54,7 @@ body {
     .nav {
         margin-top: 20px;
         button {
+            all: unset;
             padding: 10px;
             background-color: transparent;
             color: white;
@@ -70,6 +71,20 @@ body {
     min-height: 0;
 }
 
+.contact-div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30%;
+}
+
 .footer {
 
 }
@@ -81,6 +96,10 @@ img {
     object-position: center;
 }
 
+.food1 {
+    width: 70%;
+}
+
 .map-frame {
     width: 80%;
     height: 80%;
@@ -89,6 +108,9 @@ img {
 @media (min-width: 1280px) {
     img {
         object-fit: contain;
+    }
+    .map-frame {
+        width: 50%;
     }
 }
 
