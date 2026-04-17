@@ -2,6 +2,8 @@ import "./styles.css";
 import background from "./img/background-webp.webp";
 import home from "./home.js";
 import menu from "./menu.js";
+import hours from "./hours.js";
+import location from "./location.js";
 import contact from "./contact.js";
 
 const mainContainer = document.querySelector(".maincontainer");
@@ -29,6 +31,20 @@ menuButton.addEventListener("click", (event) => {
     menu();
 })
 
+const hoursButton = document.createElement("button");
+hoursButton.innerText = "Hours";
+hoursButton.addEventListener("click", (event) => {
+    clearTab();
+    hours();
+})
+
+const locationButton = document.createElement("button");
+locationButton.innerText = "Location";
+locationButton.addEventListener("click", (event) => {
+    clearTab();
+    location();
+})
+
 const contactButton = document.createElement("button");
 contactButton.innerText = "Contact";
 contactButton.addEventListener("click", (event) => {
@@ -38,6 +54,8 @@ contactButton.addEventListener("click", (event) => {
 
 nav.appendChild(homeButton);
 nav.appendChild(menuButton);
+nav.appendChild(hoursButton);
+nav.appendChild(locationButton);
 nav.appendChild(contactButton);
 header.prepend(h2);
 header.prepend(h1);

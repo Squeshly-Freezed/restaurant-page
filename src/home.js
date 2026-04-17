@@ -1,4 +1,4 @@
-import logo from "./img/logo-webp.webp";
+import logo from "./img/food3-webp.webp";
 
 const content = document.querySelector(".content");
 
