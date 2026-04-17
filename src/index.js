@@ -43,35 +43,40 @@ footer.appendChild(instagramWrapper);
 
 const homeButton = document.createElement("button");
 homeButton.innerText = "Home";
-homeButton.addEventListener("click", (event) => {
+homeButton.setAttribute("aria-label", "Home");
+homeButton.addEventListener("click", () => {
     clearTab();
     home();
 })
 
 const menuButton = document.createElement("button");
 menuButton.innerText = "Menu";
-menuButton.addEventListener("click", (event) => {
+menuButton.setAttribute("aria-label", "Menu");
+menuButton.addEventListener("click", () => {
     clearTab();
     menu();
 })
 
 const hoursButton = document.createElement("button");
 hoursButton.innerText = "Hours";
-hoursButton.addEventListener("click", (event) => {
+hoursButton.setAttribute("aria-label", "Hours");
+hoursButton.addEventListener("click", () => {
     clearTab();
     hours();
 })
 
 const locationButton = document.createElement("button");
 locationButton.innerText = "Location";
-locationButton.addEventListener("click", (event) => {
+locationButton.setAttribute("aria-label", "Location");
+locationButton.addEventListener("click", () => {
     clearTab();
     location();
 })
 
 const contactButton = document.createElement("button");
 contactButton.innerText = "Contact";
-contactButton.addEventListener("click", (event) => {
+contactButton.setAttribute("aria-label", "Contact");
+contactButton.addEventListener("click", () => {
     clearTab();
     contact();
 })
@@ -89,6 +94,6 @@ function clearTab () {
     content.innerText = "";
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     home();
 })

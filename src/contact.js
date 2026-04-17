@@ -4,6 +4,7 @@ const content = document.querySelector(".content");
 
 const food1Image = document.createElement("img");
 food1Image.classList.add("food1");
+food1Image.alt = "Koharu Shokudo has beautiful sushi platter"
 food1Image.src = food1;
 
 const contactDiv = document.createElement("div");
