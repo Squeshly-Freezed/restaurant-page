@@ -12,6 +12,8 @@ const content = document.querySelector(".content");
 
 const h1 = document.createElement("h1");
 h1.innerText = "Koharu Shokudo"
+const h2 = document.createElement("h2");
+h2.innerText = "こはる食堂";
 
 const homeButton = document.createElement("button");
 homeButton.innerText = "Home";
@@ -37,7 +39,9 @@ contactButton.addEventListener("click", (event) => {
 nav.appendChild(homeButton);
 nav.appendChild(menuButton);
 nav.appendChild(contactButton);
+header.prepend(h2);
 header.prepend(h1);
+
 
 function clearTab () {
     content.innerText = "";
