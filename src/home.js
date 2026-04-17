@@ -1,10 +1,10 @@
-import logo from "./img/food3-webp.webp";
+import food3 from "./img/food3-webp.webp";
 
 const content = document.querySelector(".content");
 
-const logoImage = document.createElement("img");
-logoImage.src = logo;
+const food3Image = document.createElement("img");
+food3Image.src = food3;
 
 export default function display () {
-    content.appendChild(logoImage);
+    content.appendChild(food3Image);
 }

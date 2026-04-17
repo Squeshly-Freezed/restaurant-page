@@ -1,10 +1,10 @@
-import contact from "./img/hours-webp.webp";
+import food1 from "./img/food1-webp.webp";
 
 const content = document.querySelector(".content");
 
-const contactImage = document.createElement("img");
-contactImage.src = contact;
+const food1Image = document.createElement("img");
+food1Image.src = food1;
 
 export default function display () {
-    content.appendChild(contactImage);
+    content.appendChild(food1Image);
 }
