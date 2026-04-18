@@ -2,6 +2,7 @@
     font-family: "losevkaCharonMono";
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
     src: url("./font/IosevkaCharonMono-Regular.woff2"),
          url("./font/IosevkaCharonMono-Regular.woff");
 }
